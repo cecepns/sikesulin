@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pkk-primary: #3f8f7e; /* utama hijau toska SIKESULIN */
+  --color-pkk-primary-dark: #2f6b5f; /* sedikit lebih gelap untuk hover */
+  --color-pkk-primary-soft: #e3f3ef; /* latar belakang lembut variasi #3f8f7e */
+}
+
+body {
+  @apply m-0 min-h-screen bg-pkk-primary-soft text-slate-800 antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
