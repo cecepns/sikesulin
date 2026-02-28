@@ -279,7 +279,7 @@ function DashboardLayout({ user, onLogout }) {
   };
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen h-screen">
       <Sidebar
         user={user}
         currentPath={currentPath}
@@ -288,7 +288,7 @@ function DashboardLayout({ user, onLogout }) {
         onClose={() => setSidebarOpen(false)}
       />
 
-      <div className="flex min-h-screen min-w-0 flex-1 flex-col bg-slate-50/70">
+      <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-auto bg-slate-50/70">
         <header className="flex items-center justify-between border-b border-teal-100/70 bg-white/90 px-4 py-3 shadow-sm shadow-teal-50 md:px-6">
           <div className="flex items-center gap-3 md:hidden">
             <button

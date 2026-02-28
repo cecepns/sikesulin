@@ -47,7 +47,7 @@ export function Sidebar({ user, currentPath, onLogout, isOpen = false, onClose }
       )}
 
       <aside
-        className={`fixed left-0 top-0 z-50 flex h-full w-64 flex-col bg-pkk-primary-dark px-5 py-6 text-sm text-teal-50 shadow-2xl shadow-teal-900/40 transition-transform duration-200 ease-out md:relative md:translate-x-0 md:shadow-2xl ${
+        className={`fixed left-0 top-0 z-50 flex h-full w-64 flex-col bg-pkk-primary-dark px-5 py-6 text-sm text-teal-50 shadow-2xl shadow-teal-900/40 transition-transform duration-200 ease-out md:relative md:h-full md:min-h-screen md:translate-x-0 md:shadow-2xl ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
         aria-hidden={!isOpen}
