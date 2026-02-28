@@ -115,8 +115,8 @@ function DashboardHomePage() {
             {error}
           </div>
         ) : (
-          <div className="overflow-hidden rounded-xl border border-slate-100 text-[11px]">
-            <table className="min-w-full border-collapse bg-white">
+          <div className="overflow-x-auto rounded-xl border border-slate-100 text-[11px]">
+            <table className="min-w-[520px] border-collapse bg-white md:min-w-full">
               <thead className="bg-slate-50 text-[10px] uppercase tracking-wide text-slate-500">
                 <tr>
                   <th className="px-3 py-2 text-left">Jenis</th>

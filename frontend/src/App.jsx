@@ -269,6 +269,7 @@ function StatCard({ label, value }) {
 function DashboardLayout({ user, onLogout }) {
   const navigate = useNavigate();
   const location = useLocation();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const currentPath = location.pathname.replace('/dashboard', '') || '/';
 
@@ -279,11 +280,27 @@ function DashboardLayout({ user, onLogout }) {
 
   return (
     <div className="flex min-h-screen">
-      <Sidebar user={user} currentPath={currentPath} onLogout={handleLogout} />
+      <Sidebar
+        user={user}
+        currentPath={currentPath}
+        onLogout={handleLogout}
+        isOpen={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
+      />
 
-      <div className="flex min-h-screen flex-1 flex-col bg-slate-50/70">
+      <div className="flex min-h-screen min-w-0 flex-1 flex-col bg-slate-50/70">
         <header className="flex items-center justify-between border-b border-teal-100/70 bg-white/90 px-4 py-3 shadow-sm shadow-teal-50 md:px-6">
           <div className="flex items-center gap-3 md:hidden">
+            <button
+              type="button"
+              onClick={() => setSidebarOpen(true)}
+              className="rounded-lg p-2 text-slate-600 hover:bg-slate-100"
+              aria-label="Buka menu"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
             <img
               src={logo}
               alt="Logo TP PKK"
