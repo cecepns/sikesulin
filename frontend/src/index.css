@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-pkk-primary: #3f8f7e; /* utama hijau toska SIKESULIN */
+  --color-pkk-primary: #3f8f7e; /* utama hijau toska SIKANDI */
   --color-pkk-primary-dark: #2f6b5f; /* sedikit lebih gelap untuk hover */
   --color-pkk-primary-soft: #e3f3ef; /* latar belakang lembut variasi #3f8f7e */
 }

@@ -140,7 +140,7 @@ function SuratMasukPage() {
         description={
           editingId
             ? 'Perbarui data surat masuk yang sudah tersimpan.'
-            : 'Input surat masuk baru ke sistem SIKESULIN.'
+            : 'Input surat masuk baru ke sistem SIKANDI.'
         }
       >
         <form

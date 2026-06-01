@@ -1,5 +1,6 @@
 // const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
-const API_BASE_URL = "https://api-inventory.isavralabel.com/pkk-sungai-ulin";
+// const API_BASE_URL = "https://api-inventory.isavralabel.com/pkk-sungai-ulin";
+const API_BASE_URL = "https://api.kingcreativestudio.my.id/pkk-sungai-ulin";
 
 async function apiRequest(path, { method = 'GET', body, isFormData = false } = {}) {
   const headers = {};

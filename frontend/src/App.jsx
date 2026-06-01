@@ -8,21 +8,21 @@ import DisposisiPage from './pages/DisposisiPage';
 import DashboardHomePage from './pages/DashboardHomePage';
 import { Sidebar } from './components/Sidebar';
 
-const APP_TITLE = 'SIKESULIN - TP PKK Kelurahan Sungai Ulin';
+const APP_TITLE = 'SIKANDI - TP PKK Kelurahan Sungai Ulin';
 
 function useAuth() {
   const [user, setUser] = useState(() => {
-    const stored = localStorage.getItem('sikesulin_user');
+    const stored = localStorage.getItem('SIKANDI_user');
     return stored ? JSON.parse(stored) : null;
   });
 
   const login = (userData) => {
-    localStorage.setItem('sikesulin_user', JSON.stringify(userData));
+    localStorage.setItem('SIKANDI_user', JSON.stringify(userData));
     setUser(userData);
   };
 
   const logout = () => {
-    localStorage.removeItem('sikesulin_user');
+    localStorage.removeItem('SIKANDI_user');
     setUser(null);
   };
 
@@ -151,7 +151,7 @@ function LoginPage({ isAuthenticated, onLogin }) {
                 TP PKK Kelurahan Sungai Ulin
               </p>
               <h1 className="mt-1 text-2xl font-extrabold uppercase text-slate-800">
-                SIKESULIN
+                SIKANDI
               </h1>
               <p className="text-xs font-medium text-slate-500">
                 Sistem Surat Masuk, Surat Keluar &amp; Disposisi
@@ -195,7 +195,7 @@ function LoginPage({ isAuthenticated, onLogin }) {
           >
             <div>
               <h2 className="text-lg font-semibold text-slate-800">
-                Masuk ke SIKESULIN
+                Masuk ke SIKANDI
               </h2>
               <p className="mt-1 text-xs text-slate-500">
                 Gunakan akun admin atau operator untuk mengelola data surat.
@@ -311,7 +311,7 @@ function DashboardLayout({ user, onLogout }) {
                 TP PKK Sungai Ulin
               </p>
               <p className="text-xs font-bold uppercase text-slate-800">
-                SIKESULIN
+                SIKANDI
               </p>
             </div>
           </div>
