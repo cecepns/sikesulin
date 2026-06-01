@@ -61,7 +61,7 @@ export function Sidebar({ user, currentPath, onLogout, isOpen = false, onClose }
             />
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-teal-200">
-                TP PKK Sungai Ulin
+                TP PKK Sikandi
               </p>
               <p className="text-xs font-bold uppercase">SIKANDI</p>
             </div>

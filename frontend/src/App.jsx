@@ -8,7 +8,7 @@ import DisposisiPage from './pages/DisposisiPage';
 import DashboardHomePage from './pages/DashboardHomePage';
 import { Sidebar } from './components/Sidebar';
 
-const APP_TITLE = 'SIKANDI - TP PKK Kelurahan Sungai Ulin';
+const APP_TITLE = 'SIKANDI - TP PKK Kelurahan Sikandi';
 
 function useAuth() {
   const [user, setUser] = useState(() => {
@@ -148,7 +148,7 @@ function LoginPage({ isAuthenticated, onLogin }) {
             <img src={logo} alt="Logo TP PKK" className="h-16 w-16 rounded-full border-4 border-pkk-primary bg-white object-contain p-1" />
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-pkk-primary-dark">
-                TP PKK Kelurahan Sungai Ulin
+                TP PKK Kelurahan Sikandi
               </p>
               <h1 className="mt-1 text-2xl font-extrabold uppercase text-slate-800">
                 SIKANDI
@@ -308,7 +308,7 @@ function DashboardLayout({ user, onLogout }) {
             />
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-pkk-primary-dark">
-                TP PKK Sungai Ulin
+                TP PKK Sikandi
               </p>
               <p className="text-xs font-bold uppercase text-slate-800">
                 SIKANDI

@@ -140,7 +140,7 @@ function SuratKeluarPage() {
         description={
           editingId
             ? 'Perbarui data surat keluar yang sudah tersimpan.'
-            : 'Input surat keluar baru dari TP PKK Kelurahan Sungai Ulin.'
+            : 'Input surat keluar baru dari TP PKK Kelurahan Sikandi.'
         }
       >
         <form
@@ -250,7 +250,7 @@ function SuratKeluarPage() {
 
       <Card
         title="Surat Keluar"
-        description="Daftar surat keluar dari TP PKK Kelurahan Sungai Ulin."
+        description="Daftar surat keluar dari TP PKK Kelurahan Sikandi."
       >
         <Toolbar
           placeholder="Cari nomor / perihal / tujuan..."

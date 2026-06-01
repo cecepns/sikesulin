@@ -250,7 +250,7 @@ function SuratMasukPage() {
 
       <Card
         title="Surat Masuk"
-        description="Daftar surat masuk ke TP PKK Kelurahan Sungai Ulin."
+        description="Daftar surat masuk ke TP PKK Kelurahan Sikandi."
       >
         <Toolbar
           placeholder="Cari nomor / perihal / pengirim..."
